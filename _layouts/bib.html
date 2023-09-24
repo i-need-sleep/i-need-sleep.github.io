@@ -2,6 +2,9 @@
 ---
 <!-- _layouts/bib.html -->
       <div class="row">
+
+        <a id={{entry.short_hand}} style="display: block !important; position: relative !important; top: -90px !important; visibility: hidden !important;"></a>
+
         <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
         {%- if entry.preview -%}
           {% if entry.preview contains '://' -%}
@@ -29,8 +32,10 @@
 
         <!-- Entry bib key -->
         <div id="{{entry.key}}" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">{{entry.title}}</div>
+          <!-- Title -->
+          <div class="title">{{entry.title}}</div>
+          <!-- Venue -->
+          <div class="venue">{{entry.venue}}</div>
         <!-- Author -->
         <div class="author">
         {% assign author_array_size = entry.author_array | size %}
@@ -137,7 +142,7 @@
           <!-- Links/Buttons -->
           <div class="links">
           {%- if entry.abstract %}
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="abstract btn btn-sm z-depth-0" role="button">TL;DR</a>
           {%- endif %}
           {%- if entry.arxiv %}
             <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
@@ -166,7 +171,7 @@
             <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">Blog</a>
           {%- endif %}
           {%- if entry.code %}
-            <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
+            <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">GitHub</a>
           {%- endif %}
           {%- if entry.poster %}
             {% if entry.poster contains '://' -%}
@@ -232,3 +237,5 @@
           {%- endif %}
         </div>
       </div>
+
+      <!-- Other fun research -->

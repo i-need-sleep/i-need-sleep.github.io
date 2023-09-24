@@ -646,6 +646,10 @@ footer.sticky-bottom {
         }
       }
 
+      .venue {
+        font-style: italic;
+      }
+
       .links {
         a.btn {
           color: var(--global-text-color);
@@ -1033,4 +1037,11 @@ nav[data-toggle="toc"] {
     margin-bottom: 0;
     padding-top: 0.5rem;
   }
+}
+
+.ref_offset {
+  display: block;
+  position: relative;
+  top: -115px;
+  visibility: hidden;
 }

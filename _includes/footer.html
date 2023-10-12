@@ -12,7 +12,7 @@
     </footer>
     {%- else -%}
     <footer class="sticky-bottom mt-5">
-      <div class="container">
+      <div class="container" id="footer_container">
         &copy; Copyright {{ site.time | date: '%Y' }} {{ site.first_name }} {{ site.last_name }}. {{ site.footer_text }}
         {%- if site.impressum_path -%}
         <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
@@ -21,5 +21,43 @@
         Last updated: {{ "now" | date: '%B %d, %Y' }}.
         {%- endif %}
       </div>
+
+      <script type="text/javascript">
+
+          var randomIndexUsed = [];
+          var counter = 0;
+          var numberOfPosts = 1;
+          var postsTitle = [
+            'Fun fact: My Erdős number is 4. (0. Paul Erdős, 1. Nick Wormald, 2. Alistair Moffat, 3. Timothy Baldwin)',
+            'Fun fact: If you refresh this page, you may see a different fun fact.',
+          ]
+      
+          while (counter < numberOfPosts)
+          {
+              var randomIndex;
+              var postTitle;
+      
+              randomIndex = Math.floor(Math.random() * postsTitle.length);
+      
+              if (randomIndexUsed.indexOf(randomIndex) == "-1")
+              {
+                  postTitle = postsTitle[randomIndex];
+      
+                  if (counter == (numberOfPosts - 1))
+                  {
+                      document.getElementById('footer_container').innerHTML += '<p><center>' + postTitle + '</center></p>'
+                  }
+                  else
+                  {
+                      document.getElementById('footer_container').innerHTML += '<p><center>' + postTitle + '</center></p><hr />'
+                  }
+      
+                  randomIndexUsed.push(randomIndex);
+      
+                  counter++;
+              }
+          }
+      
+      </script>
     </footer>
     {%- endif %}

@@ -26,3 +26,5 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 I am a second-year master's student in natural language processing at [Mohamed bin Zayed University of Artificial Intelligence](https://mbzuai.ac.ae/) supervised by Professors [Timothy Baldwin](https://mbzuai.ac.ae/study/faculty/timothy-baldwin/) and [Gus Xia](https://mbzuai.ac.ae/study/faculty/dr-gus-xia/). I completed my undergraduate studies at [New York University Shanghai](https://shanghai.nyu.edu/) where I double majored in Computer Science and Data Science under the supervision of Professors Gus Xia and [Yik-Cheung Tam](https://shanghai.nyu.edu/academics/faculty/directory/yik-cheung-wilson-tam).
 
 My research interest is in natural language processing and music artificial intelligence.
+
+During my off-time, I am a half-baked guitarist. I design and run AI-assisted D&D campaigns, and I work on cringy jokes (I learn from [the best](http://musicxlab.com/#/people)).

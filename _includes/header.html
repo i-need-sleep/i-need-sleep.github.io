@@ -1,11 +1,12 @@
 
     <header>
+      <a id="top" class="ref_offset"></a>
 
       <!-- Nav Bar -->
       <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}">
         <div class="container">
           {% if page.permalink != '/' -%}
-          <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
+          <a class="navbar-brand title font-weight-lighter" href="{{ '/#top' | relative_url }}/">
             {%- if site.title == "blank" -%}
               {%- if site.first_name -%}
                 <span class="font-weight-bold">{{- site.first_name -}}&nbsp;</span>
@@ -45,7 +46,7 @@
 
               <!-- About -->
               <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-                <a class="nav-link" href="#">{{ about_title }}
+                <a class="nav-link" href="{{ '/#top' | relative_url }}">{{ about_title }}
                   {%- if page.permalink == '/' -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
@@ -54,13 +55,13 @@
 
               <!-- Sections -->
               <li class="nav-item">
-                <a class="nav-link" href="#about_publications">Publications</a>
+                <a class="nav-link" href="{{ '/#about_publications' | relative_url }}">Publications</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about_research">Other Research</a>
+                <a class="nav-link" href="{{ '/#about_research' | relative_url }}">Other Research</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about_misc">Misc</a>
+                <a class="nav-link" href="{{ '/#about_misc' | relative_url }}">Misc</a>
               </li>
 
               {% if site.blog_nav_title %}

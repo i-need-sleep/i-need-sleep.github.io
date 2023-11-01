@@ -193,6 +193,9 @@
           {%- if entry.pubpub %}
             <a href="{{ entry.pubpub }}" class="btn btn-sm z-depth-0" role="button">PubPub</a>
           {%- endif %}
+          {%- if entry.youtube %}
+          <a href="{{ entry.youtube }}" class="btn btn-sm z-depth-0" role="button">YouTube</a>
+        {%- endif %}
           </div>
           {% if site.badges %}
           <div class="badges">

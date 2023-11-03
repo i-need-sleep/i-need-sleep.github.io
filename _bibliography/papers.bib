@@ -8,11 +8,20 @@ Publications
       year={2023},
       selected={true},
       venue={Accepted at EMNLP 2023 Findings (short paper)},
+      arxiv={2311.00508},
       short_hand={eval_attack},
       code={https://github.com/i-need-sleep/eval_attack},
       abstract={
-       <ul>
-            <li>Coffee</li>
+      <ul class="opened_tldr">
+            <li>
+                  MT metrics are inevitably used on out-of-distribution translations from unseen systems. We investigate the robustness of such metrics with off-the-shelf adversarial attacks.
+            </li>
+            <li>
+                  Our human evaluations validate that BERTScore, BLEURT and COMET tend to overpenalize adversarially-degraded texts, especially those associated with unseen, strong MT systems.
+            </li>
+            <li>
+                  We also devise a way to probe for self-inconsistency in distance-based metrics (e.g. BERTScore) without human ratings.
+            </li>
       </ul> 
       }
 }
@@ -30,8 +39,19 @@ Publications
       venue={Accepted at NeurIPS 2023},
       short_hand={sps},
       abstract={
-       <ul>
-            <li>Coffee</li>
+      <ul class="opened_tldr">
+            <li>
+                  How can we learn low-dimensional, interpretable representations from perception (e.g. pitch from music audio) with minimal domain knowledge? What gives rise to these concepts in the first place?
+            </li>
+            <li>
+                  Physical symmetry as a fundamental inductive bias, implemented as a self-consistency constraint (e.g. the representation of pitch should be temporally transposition-equivariant).
+            </li>
+            <li>
+                  Our models learn linear pitch factors and 3D Cartesian coordinates in an unsupervised fashion.
+            </li>
+            <li>
+                  My part in this: Parts of experiments in Sec 4.1 (linear pitch factor). Design, implementation and writing for experiments in Secs A.4.2 (pitch-timbre disentanglement) and A.6.1 (SSL with arbitrary natural melodies).
+            </li>
       </ul> 
       }
 }
@@ -49,8 +69,19 @@ Publications
       venue={DSTC10 workshop at AAAI 2022},
       short_hand={dstc_uniter},
       abstract={
-       <ul>
-            <li>Coffee</li>
+      <ul class="opened_tldr">
+            <li>
+                  In a conversational situation, how can we determine which object is mentioned based on rich, multimodal information (text, vision and object knowledge base)?
+            </li>
+            <li>
+                  Based on a UNITER vision-language backbone, we inject dialogue, object and scene information through adaptors.
+            </li>
+            <li>
+                  We devise a method to encompass relative positions between objects through attention bias.
+            </li>
+            <li>
+                  Our solution ranks second in the official evaluation at DSTC10.
+            </li>
       </ul> 
       }
 }
@@ -65,8 +96,16 @@ Other research
       venue={Under review},
       short_hand={referee},
       abstract={
-       <ul>
-            <li>HonkHonk</li>
+      <ul class="opened_tldr">
+            <li>
+                  Text simplification lacks a universal criterion of quality, and annotated references are costly. We propose a pretrained TS metric that can be fine-tuned to suit different quality standards.
+            </li>
+            <li>
+                  A 3-stage training curriculum: 1) Arbitrarily scalable pretraining on source-based objectives. 2) Pretraining on source-based and higher quality reference-based objectives. 3) Fine-tuning to specific criteria.
+            </li>
+            <li>
+                  Outperforms reference-based metrics in predicting overall quality and reaches competitive performance in predicting specific quality.
+            </li>
       </ul> 
       }
 }
@@ -79,8 +118,19 @@ Other research
       venue={Course project for NLP 702: Advanced NLP},
       short_hand={causal_lm_perf},
       abstract={
-       <ul>
-            <li>HonkHonk</li>
+      <ul class="opened_tldr">
+            <li>
+                  Can we establish causal relationships between LMs' performances in different categories (e.g. better algebraic performance causing better performance in physics) and between the performances and LM specifications (e.g. more parameters causing better algebraic performance)?
+            </li>
+            <li>
+                  We apply off-the-shelf causal discovery algorithms on MMLU performances of 34 LMs.
+            </li>
+            <li>
+                  No strong evidence that performances on conceptually close subjects are causally related (e.g. high school/college computer science).
+            </li>
+            <li>
+                  Model size does not seem to causally determine the performances in all subjects.
+            </li>
       </ul> 
       },
       code={https://github.com/i-need-sleep/cd_llm_reasoning},
@@ -96,8 +146,16 @@ Other research
       venue={Unpublished research, course project for NLP 703: Speech Processing},
       short_hand={juke_control},
       abstract={
-       <ul>
-            <li>HonkHonk</li>
+      <ul class="opened_tldr">
+            <li>
+                  Modifying Jukebox's top-level transformer prior model with ControlNet to enable audio-to-audio conditional generation.
+            </li>
+            <li>
+                  Early results on vocal-source separation, vocal-conditioned accompaniment generation and note-conditioned synthesis.
+            </li>
+            <li>
+                  Future work: recasting more tasks as audio-to-audio (e.g. Recasting conditions: performance rendering, instrumentation. Recasting outputs: transcription).
+            </li>
       </ul> 
       },
       code={https://github.com/i-need-sleep/juke_control},
@@ -112,8 +170,16 @@ Other research
       venue={Mini course project for NLP 705: Current Topics in NLP},
       short_hand={syntax_acquisition},
       abstract={
-       <ul>
-            <li>HonkHonk</li>
+      <ul class="opened_tldr">
+            <li>
+                  Under the same small data budget, how does developmentally plausible data (child-oriented conversational texts) compare with web scraps in terms of LMs' syntax acquisition?
+            </li>
+            <li>
+                  Our web-scrap-trained LM demonstrates stronger syntactic performance, the acquisition of which happens early on in the training process.
+            </li>
+            <li>
+                  Controlled experiments show that this superior performance is strongly associated with vocabulary and, to a lesser extent, with sentence length.
+            </li>
       </ul> 
       },
       code={https://github.com/i-need-sleep/syntax_acquisition},
@@ -122,15 +188,23 @@ Other research
 }
 
 @misc{edit_polydis,
-      title={Faster Sequence-to-Sequence Symbolic Music Generation with Rule-Augmented Edit-Based Models and Behavioural Cloning}, 
+      title={Faster Sequence-to-Sequence Symbolic Music Generation with Rule-Augmented Edit-Based Models and Knowledge Distillation}, 
       author={Yichen Huang and Gus Xia},
       year={2022},
       fun={true},
       venue={Unpublished research},
       short_hand={edit_polydis},
       abstract={
-       <ul>
-            <li>HonkHonk</li>
+      <ul class="opened_tldr">
+            <li>
+                  Specific tasks on symbolic (e.g. harmonic style transfer) can be approximated with rule-based transformations and refined with minor edits. Can we use this property to accelerate autoregressive models for closer-to-real-time applications?
+            </li>
+            <li>
+                  Rule-based transformation + semi-autoregressive edit model with redesigned edit operations, trained with a distillation objective from a slower autoregressive model.
+            </li>
+            <li>
+                  Early experiments: 4x faster inference than the autoregressive teacher model, but there exists a large performance gap.
+            </li>
       </ul> 
       },
       code={https://github.com/i-need-sleep/quick_edit_polydis},
@@ -145,8 +219,16 @@ Other research
       venue={Unpublished research},
       short_hand={hst_interface},
       abstract={
-       <ul>
-            <li>HonkHonk</li>
+      <ul class="opened_tldr">
+            <li>
+                  Harmonic style transfer allows interactions with music based on high-level chord and texture controls. This can be leveraged to empower music amateurs.
+            </li>
+            <li>
+                  An intuitive real-time interface for piano performance and a guided explorative interface for learning.
+            </li>
+            <li>
+                  Small-scale user studies validate that our system is expressive and engages music skills.
+            </li>
       </ul> 
       },
       code={https://github.com/i-need-sleep/perf-interface},
@@ -156,27 +238,43 @@ Other research
 Misc
 
 @misc{gaggia,
-      title={Modified Gaggia Classic Pro}, 
+      title={A Frankensteined Gaggia Classic Pro}, 
       author={Yichen Huang and Daniel Chin},
       year={2022},
       venue={Accepted on my kitchen counter, 2022},
       misc={true},
       abstract={
-       <ul>
-            <li>Under construction</li>
+      <ul class="opened_tldr">
+            <li>
+                  The Gaggia Classic Pro is an excellent budget single-boiler espresso machine. It, however, lacks precise monitoring and control for temperature and flow.
+            </li>
+            <li>    
+                  We modified one such machine with a PID controller, pressure gauge, piggy-backed flow control knob, and several quality-of-life features, achieving consistently superior shot quality and outperforming budget single-boiler and heat exchanger baselines.
+            </li>
+            <li> 
+                  Additionally, we implement an over-caffeination prevention mechanism where the pressure gauge's connector starts to leak after the third consecutive shot. 
+            </li>
       </ul> 
       }
 }
 
 @misc{dubai_concert,
       title={Music X Lab led by Gus Xia: Expressive Music Performance with AI}, 
-      author={Gus Xia and Ziyu Wang and Daniel Chin and Yichen Huang and Members of Music X Lab},
+      author={Gus Xia and Ziyu Wang and Daniel Chin and Yichen Huang and Other Music X Lab Members},
       year={2022},
       venue={A concert at the Steinway Dubai Community Concert Hall},
       misc={true},
       abstract={
-       <ul>
-            <li>Under construction</li>
+      <ul class="opened_tldr">
+            <li>
+                  A concert showcasing some of the earlier works at Music X Lab.
+            </li>
+            <li>
+                  Gus made me program the UAE national anthem into the piano interface.
+            </li>
+            <li>
+                  The melody of the aforementioned anthem is stuck in my head to this day.
+            </li>
       </ul> 
       },
       youtube={https://www.youtube.com/watch?v=Ahfk0hvpCzM}

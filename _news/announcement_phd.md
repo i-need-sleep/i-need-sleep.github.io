@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I am looking for Ph.D. opportunities starting in fall 2024.
+I am looking for Ph.D. opportunities starting in fall 2024. Please see my [research proposal](./blog/2023/research-interest/).

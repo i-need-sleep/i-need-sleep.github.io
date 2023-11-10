@@ -23,15 +23,23 @@ Functional alignment offers a promising middle ground. It allows us to ask the q
 Note: How does using part-whole relationships (capsule networks) as a prior fit on the spectrum?
 
 # Where to Start
+
 idontknowlol
+
 Easy case: nested modalities
+
 Post-hoc swapping of model components
+
 Merits: explicit(-ish) control, plug-and-play
 
 # Going Further
+
 Immediately: growing trees! Adding width (audio -> note + loudness) and adding depth (speech -> text -> emotion)
+
 Sequence alignment (diffusion, not ARLM)
+
 Layer alignment (need architectural work. How to feed probed reps back?)
+
 It’s too late I need to sleep
 
 How does this relate to all the fun research I've done? See <a href=./blog/2023/research-interest>How I Got Here</a>.

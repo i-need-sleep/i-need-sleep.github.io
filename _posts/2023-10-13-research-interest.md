@@ -4,7 +4,8 @@ title:  Research Interest
 date:   2023-10-13 10:51:21
 description: description
 ---
-I am recently intrigued by these two topics: functional alignment and emergent concepts.
+Under construction lol
+<!-- I am recently intrigued by these two topics: functional alignment and emergent concepts.
 
 # Functional Alignment
 
@@ -40,6 +41,6 @@ Sequence alignment (diffusion, not ARLM)
 
 Layer alignment (need architectural work. How to feed probed reps back?)
 
-It’s too late I need to sleep
+It’s too late I need to sleep -->
 
 How does this relate to all the fun research I've done? See <a href="../how-i-got-here">How I Got Here</a>.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Research Interest
+title:  Research Interest (Music AI)
 date:   2023-10-13 10:51:21
 description: description
 ---

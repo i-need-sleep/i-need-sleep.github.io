@@ -1,6 +1,27 @@
 ---
 ---
 Publications
+@misc{referee,
+      title={REFeREE: A REference-FREE Model-Based Metric for Text Simplification}, 
+      author={Yichen Huang and Ekaterina Kochmar},
+      year={2023},
+      selected={true},
+      venue={Accepted at LREC-COLING 2024},
+      short_hand={referee},
+      abstract={
+      <ul class="opened_tldr">
+            <li>
+                  Text simplification lacks a universal criterion of quality, and annotated references are costly. We propose a pretrained TS metric that can be fine-tuned to suit different quality standards.
+            </li>
+            <li>
+                  A 3-stage training curriculum: 1) Arbitrarily scalable pretraining on source-based objectives. 2) Pretraining on source-based and higher quality reference-based objectives. 3) Fine-tuning to specific criteria.
+            </li>
+            <li>
+                  Outperforms reference-based metrics in predicting overall quality and reaches competitive performance in predicting specific quality.
+            </li>
+      </ul> 
+      }
+}
 
 @misc{eval_attack,
       title={Robustness Tests for Automatic Machine Translation Metrics with Adversarial Attacks}, 
@@ -88,28 +109,6 @@ Publications
 }
 
 Other research
-
-@misc{referee,
-      title={REFeREE: A REference-FREE Model-Based Metric for Text Simplification}, 
-      author={Yichen Huang and Ekaterina Kochmar},
-      year={2023},
-      fun={true},
-      venue={Under review},
-      short_hand={referee},
-      abstract={
-      <ul class="opened_tldr">
-            <li>
-                  Text simplification lacks a universal criterion of quality, and annotated references are costly. We propose a pretrained TS metric that can be fine-tuned to suit different quality standards.
-            </li>
-            <li>
-                  A 3-stage training curriculum: 1) Arbitrarily scalable pretraining on source-based objectives. 2) Pretraining on source-based and higher quality reference-based objectives. 3) Fine-tuning to specific criteria.
-            </li>
-            <li>
-                  Outperforms reference-based metrics in predicting overall quality and reaches competitive performance in predicting specific quality.
-            </li>
-      </ul> 
-      }
-}
 
 @misc{causal_lm_perf,
       title={Causal Discovery on the Capacities and Specifications of Large Language Models}, 

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I am looking for PhD opportunities in music AI starting fall 2025. I am currently interested in improving music generative models into helpful, interactive tools by better control, evaluation, and consideration of the human creative process. Please see my [research statement](./blog/2024/research-interest-2024dec/).
+I am looking for PhD opportunities in music AI starting fall 2025. I am currently interested in improving music generative models into helpful, interactive tools by better control, evaluation, and consideration of the human creative process. Please see my [research statement](./blog/2024/research-interests-2024dec/).
